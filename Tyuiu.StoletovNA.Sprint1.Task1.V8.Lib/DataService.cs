@@ -3,7 +3,7 @@ namespace Tyuiu.StoletovNA.Sprint1.Task1.V8.Lib {
     public class DataService : ISprint1Task1V8 {
         public double Calculate(double a, double x)
         {
-            return (x * Math.PI) / a;
+            return (x * 3.14) / a;
         }
     }
 }
