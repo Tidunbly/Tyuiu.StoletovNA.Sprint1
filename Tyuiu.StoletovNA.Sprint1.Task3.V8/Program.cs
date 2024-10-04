@@ -1,7 +1,7 @@
 ﻿using System;
-using Tyuiu.StoletovNA.Sprint1.Task2.V12.Lib;
+using Tyuiu.StoletovNA.Sprint1.Task3.V8.Lib;
 
-namespace Tyuiu.StoletovNA.Sprint1.Task2.V12 {
+namespace Tyuiu.StoletovNA.Sprint1.Task3.V8 {
 
     class Program {
         static void Main(string[] args)
@@ -12,9 +12,9 @@ namespace Tyuiu.StoletovNA.Sprint1.Task2.V12 {
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
-            Console.WriteLine("* Тема: Арифметические операторы в C#                                     *");
-            Console.WriteLine("* Задание #2                                                              *");
-            Console.WriteLine("* Вариант #12                                                             *");
+            Console.WriteLine("* Тема: Операторы составного присваивания                                 *");
+            Console.WriteLine("* Задание #3                                                              *");
+            Console.WriteLine("* Вариант #8                                                              *");
             Console.WriteLine("* Выполнил: Столетов Никита Андреевич | ИИПб-24-2                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
@@ -25,24 +25,24 @@ namespace Tyuiu.StoletovNA.Sprint1.Task2.V12 {
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int value, valueTwo, valueThree;
-            Console.WriteLine("Введите длину параллелепипеда:");
-            value = Convert.ToInt32(Console.ReadLine());
+            double startAmount, persent, timedays;
 
-            Console.WriteLine("Введите ширину параллелепипеда:");
-            valueTwo = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите величину вклада:");
+            startAmount = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Введите высоту параллелепипеда:");
-            valueThree = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите срок вклада:");
+            timedays = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Введите процентную ставку:");
+            persent = Convert.ToDouble(Console.ReadLine());
 
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ                                                               *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(ds.CalculateParallelepipedVolume(value, valueTwo, valueThree));
+            Console.WriteLine(ds.IncomeAmount(startAmount, persent, timedays));
             Console.ReadLine();
-
 
         }
     }
